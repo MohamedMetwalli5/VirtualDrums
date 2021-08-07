@@ -70,14 +70,14 @@ while True:
 
     play_drums(x,y)
 
-    cv.imshow("Mask", mask)
+    #cv.imshow("Mask", mask)
 
     cv.rectangle(frame, (44, 320), (270, 540), (255, 0, 0), 3)
     cv.rectangle(frame, (320, 320), (546, 540), (0, 255, 0), 3)
     cv.rectangle(frame, (596, 320), (812, 540), (0, 0, 255), 3)
     cv.rectangle(frame, (842, 320), (1085, 540), (0, 255, 255), 3)
 
-    cv.imshow("Video",frame)
+    cv.imshow("Virtual Drums",frame)
     if cv.waitKey(6) & 0xFF == ord("q"):
         break
 
